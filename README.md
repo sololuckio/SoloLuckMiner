@@ -5,7 +5,7 @@ window with live hashrate and share counts. It drives the proven **cpuminer-opt*
 
 > A PC's hashrate is tiny next to an ASIC, so this is a **lottery ticket** — which is
 > exactly the point of a solo pool. If your CPU solves a block, the whole reward is paid
-> straight to *your* address on-chain (minus the pool's flat 2% fee).
+> straight to *your* address on-chain — the whole reward, 0% pool fee.
 
 This is a **clean wrapper**: it has no mining code inside it. On first run it detects your
 CPU and **downloads the matching cpuminer-opt build** (Jay D Dee's, GPLv2) into a folder
@@ -93,8 +93,8 @@ Manual: `brew install autoconf automake libtool pkg-config curl jansson`, build
 ## About SoloLuck (the pool)
 [SoloLuck](https://sololuck.io) is a public **true-solo** Bitcoin pool, hosted in
 **Jakarta, Indonesia** for low latency across Asia. You mine with your **own** BTC address as
-the username; if you solve a block, the network pays the full reward straight to you. The only
-fee is a flat **2%**, charged on-chain **only** when you actually solve a block. Non-custodial —
+the username; if you solve a block, the network pays the full reward straight to you — **0% pool
+fee, finders keepers**. Non-custodial —
 no account, no KYC.
 
 - **Stratum host:** `stratum.sololuck.io`
