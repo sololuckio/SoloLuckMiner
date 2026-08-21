@@ -7,7 +7,7 @@
 #   curl -fsSL https://sololuck.io/mac-miner.sh | bash
 #   ./mac-miner.sh bc1qyouraddress
 #
-# Open-source, non-custodial: the reward (minus a flat 2 percent on a solved
+# Open-source, non-custodial: the entire reward on a solved block is yours, 0% fee (on a solved
 # block) is paid straight to your address on-chain. We never hold it.
 set -uo pipefail
 
@@ -25,7 +25,7 @@ c_y "── SoloLuck · Mac CPU solo miner ────────────�
 echo "Mines Bitcoin (CPU) solo to YOUR address via $POOL_HOST:$POOL_PORT."
 echo "Solo mining is a lottery — a Mac's hashrate is tiny, so think of it as a"
 echo "cheap, low-power ticket. If your Mac solves a block, the whole reward is"
-echo "yours (minus a flat 2 percent), paid on-chain to your address. No account."
+echo "entirely yours - 0% fee - paid on-chain to your address. No account."
 echo
 
 [ "$(uname)" = "Darwin" ] || { c_r "This installer is for macOS. For Windows see https://sololuck.io/setup"; exit 1; }
